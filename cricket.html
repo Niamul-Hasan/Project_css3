@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cricket match</title>
+    <style>
+        .field{
+            /* border: 2px solid greenyellow; */
+            cursor: crosshair;
+        } 
+        .field:hover .bat{
+            transform: rotate(-80deg);
+            transform-origin: top right;
+        }
+        .bat{
+            transition: transform 0.1s ease-in;
+        }
+        .ball{
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            text-align: center;
+            position: relative;
+            left:570px;
+            bottom: 100px;
+            border-radius: 25px;
+            transition: transform 0.2s ease-in-out 0.15s;
+        }
+        .field:hover .ball{
+            transform: translate(720px,-270px);
+        }
+        a{
+            color: red;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Ekn hobe asol khela....</h1>
+    <div class="field">
+        <img class="bat" src="images/bat.png" alt="">
+        <div class="ball">
+            <a target="_blank" href="http://www.tigercricket.com.bd/">bcb</a>
+        </div>
+    </div>
+</body>
+</html>

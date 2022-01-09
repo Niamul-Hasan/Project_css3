@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        .box{
+            height: 80px;
+            width: 80px;
+            margin: 20px;
+            background-color: teal;
+            border-radius: 5px;
+            transition: height 2s ease, width 2s ease, transform 2s;
+        }
+        .box img{
+            width: 80%;
+            position: relative;
+            transition: transform 1s;
+
+        }
+        .box img:hover{
+            transform: rotate(270deg);
+        }
+        section:hover .box{
+            height: 150px;
+            width: 150px;
+            transform: rotate(180deg);
+        }
+        section{
+            width: 500px;
+            height: 500px;
+            border: 1px dotted coral;
+        }
+    </style>
+</head>
+<body>
+    <h1>Helo!!! ajk Khela hobe...</h1>
+    <section>
+        <div class="box">transition</div>
+    <div class="box">transition
+        <p><img src="images/boy.png" alt=""></p>
+    </div>
+    <div class="box">transition</div>
+    </section>
+</body>
+</html>
